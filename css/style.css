@@ -449,3 +449,7 @@ footer {
     }
 
 }
+
+body {
+    background: pink !important;
+}
