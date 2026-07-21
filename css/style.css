@@ -3,11 +3,14 @@
 }
 
 
+/* 全站 */
+
 body {
 
     margin: 0;
 
     min-height: 100vh;
+
 
     background:
     linear-gradient(
@@ -25,11 +28,29 @@ body {
     color: #ead9ad;
 
 
-    /* 古風字體 */
-    font-family: "Songti TC", "Noto Serif TC", serif;
+    font-family: "Noto Serif TC", serif;
 
 
     text-align: center;
+
+}
+
+
+
+/* 去除連結預設效果 */
+
+a {
+
+    text-decoration: none;
+
+    color: inherit;
+
+}
+
+
+a:focus {
+
+    outline: none;
 
 }
 
@@ -76,24 +97,31 @@ body {
 
     font-size: 40px;
 
+
 }
 
 
 
-/* 標題 */
+/* 主標題 */
 
 h1 {
 
     margin: 0;
 
 
-    color: #d4af37;
+    font-family: "Noto Serif TC", serif;
 
 
     font-size: 60px;
 
 
+    font-weight: 900;
+
+
     letter-spacing: 15px;
+
+
+    color: #d4af37;
 
 
     text-shadow:
@@ -106,11 +134,19 @@ h1 {
 
 
 
+/* 副標 */
+
 .subtitle {
+
+
+    margin-top: 20px;
+
 
     font-size: 22px;
 
+
     letter-spacing: 8px;
+
 
 }
 
@@ -120,13 +156,16 @@ h1 {
 
 .line {
 
+
     width: 70%;
 
 
     margin: 45px auto;
 
 
-    border-top: 1px solid #b99545;
+    border-top:
+
+    1px solid #b99545;
 
 }
 
@@ -136,6 +175,7 @@ h1 {
 
 .login-box {
 
+
     text-align: center;
 
 }
@@ -143,25 +183,8 @@ h1 {
 
 .login-box a {
 
+
     display: inline-block;
-
-}
-
-
-/* 移除超連結效果 */
-
-a {
-
-    text-decoration: none;
-
-    color: inherit;
-
-}
-
-
-a:focus {
-
-    outline: none;
 
 }
 
@@ -184,28 +207,41 @@ button {
     background:
 
     linear-gradient(
+
         135deg,
+
         #8b2c2c,
+
         #4b1515
+
     );
 
 
-    border: 1px solid #d4af37;
+    border:
+
+    1px solid #d4af37;
 
 
-    color: #f8e7b0;
+    color:
+
+    #f8e7b0;
+
+
+
+    font-family: "Noto Serif TC", serif;
 
 
     font-size: 20px;
 
 
-    font-family: inherit;
+    font-weight: 700;
+
+
+    letter-spacing: 5px;
 
 
     cursor: pointer;
 
-
-    letter-spacing: 5px;
 
 
     transition: 0.3s;
@@ -222,14 +258,20 @@ button:hover {
 
     color: #4b1515;
 
+
 }
 
 
 
+/* 消除手機點擊藍框 */
+
 button:focus,
+
 button:active {
 
+
     outline: none;
+
 
     box-shadow: none;
 
@@ -237,7 +279,24 @@ button:active {
 
 
 
-/* 公告 */
+/* 公告標題 */
+
+.notice h2 {
+
+
+    color: #d4af37;
+
+
+    font-size: 28px;
+
+
+    letter-spacing: 5px;
+
+}
+
+
+
+/* 公告框 */
 
 .notice-card {
 
@@ -262,31 +321,21 @@ button:active {
 
     1px solid rgba(212,175,55,0.4);
 
-}
 
-
-
-.notice h2 {
-
-
-    color:#d4af37;
-
-
-    letter-spacing:5px;
 
 }
 
 
 
-/* 玩家資訊 */
+/* 狀態 */
 
 .status {
 
 
-    margin-top:40px;
+    margin-top: 40px;
 
 
-    font-size:18px;
+    font-size: 18px;
 
 }
 
@@ -295,7 +344,7 @@ button:active {
 .status span {
 
 
-    color:#d4af37;
+    color: #d4af37;
 
 }
 
@@ -306,51 +355,76 @@ button:active {
 footer {
 
 
-    margin-top:70px;
+    margin-top: 70px;
 
 
-    color:#9d8350;
+    color: #9d8350;
+
 
 }
 
 
 
-/* 手機版 */
+
+
+/* 手機 */
 
 @media(max-width:600px){
 
 
-    h1 {
+    .page {
 
-        font-size:38px;
-
-        letter-spacing:8px;
+        padding: 50px 15px;
 
     }
+
+
+
+    h1 {
+
+
+        font-size: 38px;
+
+
+        letter-spacing: 8px;
+
+
+    }
+
 
 
     .subtitle {
 
-        font-size:16px;
+
+        font-size: 16px;
+
+
+        letter-spacing: 5px;
+
 
     }
+
 
 
     button {
 
 
-        width:130px;
+        width: 130px;
 
 
-        font-size:16px;
+        font-size: 16px;
+
 
     }
+
 
 
     .notice-card {
 
-        width:95%;
+
+        width: 95%;
+
 
     }
 
-}}
+}
