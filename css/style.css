@@ -2,41 +2,32 @@
     box-sizing: border-box;
 }
 
-
 body {
 
     margin: 0;
 
     min-height: 100vh;
 
-
     background:
 
     linear-gradient(
-        rgba(224,212,202,0.85),
-        rgba(203,182,202,0.85)
+        rgba(235,225,213,0.85),
+        rgba(235,225,213,0.85)
     ),
 
     url("../image/palace-bg.jpg");
-
 
     background-size: cover;
 
     background-position: center;
 
-
-    color: #9395BD;
-
+    color: #6D5230;
 
     font-family: "Noto Serif TC", serif;
-
 
     text-align: center;
 
 }
-
-
-
 
 /* 連結 */
 
@@ -48,14 +39,11 @@ a {
 
 }
 
-
 a:focus {
 
     outline:none;
 
 }
-
-
 
 /* 主容器 */
 
@@ -69,20 +57,15 @@ a:focus {
 
 }
 
-
-
 /* 印章 */
 
 .seal {
-
 
     width:70px;
 
     height:70px;
 
-
     margin:0 auto 30px;
-
 
     display:flex;
 
@@ -90,166 +73,103 @@ a:focus {
 
     align-items:center;
 
+    border:2px solid #12396A;
 
-    border:
-
-    2px solid #9395BD;
-
-
-    color:#9395BD;
-
+    color:#12396A;
 
     font-size:40px;
 
-
 }
-
-
 
 /* 標題 */
 
 h1 {
 
-
     margin:0;
 
-
-    color:#9395BD;
-
+    color:#12396A;
 
     font-family:"Noto Serif TC",serif;
 
-
     font-size:60px;
-
 
     font-weight:900;
 
-
     letter-spacing:15px;
 
-
     text-shadow:
-
-    0 2px 8px #CBB6CA;
+    0 2px 8px rgba(165,126,75,.35);
 
 }
 
-
-
-
-
 .subtitle {
 
-
-    color:#9395BD;
-
+    color:#6D5230;
 
     font-size:22px;
-
 
     letter-spacing:8px;
 
 }
 
-
-
 /* 分隔線 */
 
 .line {
 
-
     width:70%;
-
 
     margin:45px auto;
 
-
-    border-top:
-
-    1px solid #C4CAD0;
+    border-top:1px solid #A57E4B;
 
 }
-
-
 
 /* 按鈕區 */
 
 .login-box a {
 
-
     display:inline-block;
 
 }
 
-
-
-
-
 button {
-
 
     width:160px;
 
-
     padding:14px;
-
 
     margin:10px;
 
+    background:#12396A;
 
-    background:#9395BD;
+    border:1px solid #A57E4B;
 
-
-    border:
-
-    1px solid #CBB6CA;
-
-
-    color:#E0D4CA;
-
+    color:#EBE1D5;
 
     font-family:"Noto Serif TC",serif;
 
-
     font-size:20px;
-
 
     font-weight:700;
 
-
     letter-spacing:5px;
-
 
     cursor:pointer;
 
-
     transition:.3s;
 
-
 }
-
-
 
 button:hover {
 
+    background:#39626D;
 
-    background:#92CCA2;
-
-
-    color:#ffffff;
-
+    color:#EBE1D5;
 
 }
 
-
-
-
-
 button:focus,
-
 button:active {
-
 
     outline:none;
 
@@ -257,103 +177,67 @@ button:active {
 
 }
 
-
-
 /* 公告 */
 
 .notice h2 {
 
-
-    color:#9395BD;
-
+    color:#12396A;
 
     letter-spacing:5px;
 
 }
 
-
-
-
-
 .notice-card {
-
 
     width:70%;
 
-
     margin:auto;
-
 
     padding:25px;
 
+    background:rgba(235,225,213,.55);
 
-    background:
+    border:1px solid #A57E4B;
 
-    rgba(255,255,255,0.35);
-
-
-
-    border:
-
-    1px solid #CBB6CA;
-
-
-    color:#9395BD;
-
+    color:#6D5230;
 
 }
-
-
 
 /* 狀態 */
 
 .status {
 
-
     margin-top:40px;
-
 
     font-size:18px;
 
-
 }
-
-
 
 .status span {
 
-
-    color:#92CCA2;
+    color:#39626D;
 
 }
-
-
 
 /* footer */
 
 footer {
 
-
     margin-top:70px;
 
-
-    color:#9395BD;
+    color:#6D5230;
 
 }
-
-
 
 /* 手機 */
 
 @media(max-width:600px){
-
 
     .page {
 
         padding:50px 15px;
 
     }
-
 
     h1 {
 
@@ -363,13 +247,11 @@ footer {
 
     }
 
-
     .subtitle {
 
         font-size:16px;
 
     }
-
 
     button {
 
@@ -378,7 +260,6 @@ footer {
         font-size:16px;
 
     }
-
 
     .notice-card {
 
